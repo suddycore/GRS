@@ -1,0 +1,97 @@
+body {
+    font-family: 'Black Ops One', cursive;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: gold;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid gold;
+    box-shadow: 0 0 20px gold;
+}
+
+/* Стиль авторизации */
+.auth-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.auth-section h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+#playerName {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    font-family: 'Black Ops One';
+}
+
+.auth-button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Black Ops One';
+}
+
+.auth-button:hover {
+    background: #cc0000;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Таймер КД */
+.cooldown {
+    color: #ff6600;
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Live-лента */
+.live-tape {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+#liveTapeContent {
+    font-size: 0.9em;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.live-entry {
+    color: #4CAF50;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+/* Остальное (из предыдущего CSS) */
+.title, .subtitle, .slot-machine, .slot-drum, .spin-button, .prize, .attempts {
+    /* Коды из предыдущего стиля остаются без изменений */
+}
