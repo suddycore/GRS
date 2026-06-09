@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRS Vegas Slots</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Форма авторизации -->
+        <div class="auth-section" id="authSection">
+            <h2>🎟️ Войти в казино</h2>
+            <input type="text" id="playerName" placeholder="Ваш никнейм">
+            <button class="auth-button" id="loginBtn">Войти</button>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+
+        <!-- Основной экран (после авторизации) -->
+        <div class="game-section" id="gameSection" style="display: none;">
+            <h1 class="title">🎰 GRS VEGAS SLOTS 🎰</h1>
+            <p class="subtitle">1 попытка + 5 мин КД</p>
+
+            <div class="slot-machine">
+                <div class="slot-drum" id="drum1"></div>
+                <div class="slot-drum" id="drum2"></div>
+                <div class="slot-drum" id="drum3"></div>
+            </div>
+
+            <button class="spin-button" id="spinBtn" disabled>СПИН!</button>
+            <div class="prize" id="prizeDisplay">Выбери приз...</div>
+
+            <!-- Таймер КД -->
+            <div class="cooldown" id="cooldownDisplay">
+                <i class="fas fa-hourglass"></i> Ожидание: <span id="cooldownTime">0</span> сек
+            </div>
+
+            <!-- Индикатор попыток -->
+            <div class="attempts">
+                <i class="fas fa-spinner"></i> Попыток: <span id="attemptsLeft">1</span>
+            </div>
+
+            <!-- Live-лента выигрышей -->
+            <div class="live-tape">
+                <h3>🌟 Live-выигрыши</h3>
+                <div id="liveTapeContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
